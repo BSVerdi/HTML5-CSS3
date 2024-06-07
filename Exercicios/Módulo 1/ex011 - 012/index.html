@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel" style="border-radius: 100%;" border>
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/wonder-where-you-are.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não reproduz áudio. <a href="midia/wonder-where-you-are.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h1>Inserindo Vídeo do YouTube</h1>
+    <p>Vamos aprender a inserir videos do própio Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZM1Ut9OT1hA?si=2blyIXOmLfZog2yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+</body>
+</html>
